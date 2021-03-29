@@ -1,8 +1,8 @@
 import React from "react";
-import style from './FriendsListItem.module.scss' 
+import style from "./FriendsListItem.module.scss";
 
-const FriendsListItem = ({ id, name, avatar, isOnline }) => { 
-  const statusClassName = isOnline ? style.online : style.offline
+const FriendsListItem = ({ id, name, avatar, isOnline }) => {
+  const statusClassName = isOnline ? style.online : style.offline;
   return (
     <li key={id} className={style.item}>
       <span className={statusClassName}></span>
@@ -10,5 +10,5 @@ const FriendsListItem = ({ id, name, avatar, isOnline }) => {
       <p className={style.name}>{name}</p>
     </li>
   );
-}
-export default FriendsListItem
+};
+export default FriendsListItem;

@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 import styles from "./Stats.module.scss";
 
 const Stats = ({ followers, views, likes }) => {
@@ -18,5 +19,10 @@ const Stats = ({ followers, views, likes }) => {
       </li>
     </ul>
   );
+};
+Stats.propTypes = {
+  followers: PropTypes.string.isRequired,
+  views: PropTypes.string.isRequired,
+  likes: PropTypes.string.isRequired,
 };
 export default Stats;
